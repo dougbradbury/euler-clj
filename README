@@ -4,6 +4,7 @@ dougbradbury's 8LU euler solutions
 
 ## Usage
 
+lein deps
 lein spec
 
 ## Installation
