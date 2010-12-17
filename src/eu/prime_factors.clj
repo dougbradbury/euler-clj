@@ -6,7 +6,7 @@
     '()
     ((fn try-candidate
       [candidate n]
-      (if (>= candidate n)
+      (if (> candidate (Math/sqrt n))
         (list n)
         (if (= 0 (rem n candidate))
           (cons candidate (try-candidate candidate (/ n candidate)))
