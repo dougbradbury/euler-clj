@@ -2,13 +2,13 @@
   (:use
     [eu.prime-factors]))
 
-(defn div
+(defn divisible?
         [x, divisor]
                 (= 0 (rem x divisor)))
 
 (defn keep3_5
         [x]
-        (or (div x 3) (div x 5)))
+        (or (divisible? x 3) (divisible? x 5)))
 
 (defn fib-sequence []
   ((fn fib-internal
