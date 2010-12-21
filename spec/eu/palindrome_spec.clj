@@ -20,6 +20,8 @@
   (it "identifies palindromic numbers"
     (should (palindrome? 11))
     (should-not (palindrome? 12))
+    (should (palindrome? 9009))
+    (should-not (palindrome? 19321))
     )
 
   )

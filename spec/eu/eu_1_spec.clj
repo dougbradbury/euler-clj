@@ -35,5 +35,14 @@
   (it "should solve big euler 3"
     (should= 6857 (euler3 600851475143)))
 
+  (it "should have product sequence"
+    (should= (list (* 99 99) (* 99 98) (* 99 97)) (take 3 (product-seq 99))))
+    
+  (it "should solve small euler 4"
+    (should= 9009 (euler4 99)))
+
+  (it "should solve big euler 4"
+    (should= 906609 (euler4 999)))
+
   )
 (run-specs)
